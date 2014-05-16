@@ -16,7 +16,7 @@ namespace GaragemExpress
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Visao.frmLogin());
+            Application.Run(new Visao.frmPrincipal());
         }
     }
 }

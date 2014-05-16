@@ -67,6 +67,8 @@ namespace GaragemExpress
                     (ctl as ComboBox).SelectedIndex = -1;
                 if (ctl is ListBox)
                     (ctl as ListBox).SelectedIndex = -1;
+                if (ctl is RadioButton)
+                    (ctl as RadioButton).Enabled = false;
             }
         }
 

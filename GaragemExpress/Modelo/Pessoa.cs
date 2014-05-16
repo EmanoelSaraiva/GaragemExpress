@@ -59,11 +59,7 @@ namespace GaragemExpress.Modelo
         }
 
         DateTime _dtNasc;
-        public DateTime DtNasc
-        {
-            get { return _dtNasc; }
-            set { _dtNasc = value; }
-        }
+        
 
         string _sexo;
         public string Sexo
@@ -114,6 +110,19 @@ namespace GaragemExpress.Modelo
         {
             get { return _bairro; }
             set { _bairro = value; }
+        }
+
+        public void CalculaDataDeNascimento ()
+        {
+            int _idade = DateTime.Now.Year - _dtNasc.Year;
+
+            if (DateTime.Now.Month < _dtNasc.Month || (DateTime.Now.Month == _dtNasc.Month
+                && DateTime.Now.Day < _dtNasc.Day))
+            {
+                _idade--;
+            }
+
+            
         }
 
     }

@@ -61,16 +61,20 @@
             // 
             // cbEstado
             // 
+            this.cbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEstado.Enabled = false;
             this.cbEstado.FormattingEnabled = true;
             this.cbEstado.Items.AddRange(new object[] {
-            "SP",
+            "AC",
             "RJ",
             "SC",
-            "AC"});
+            "SP"});
             this.cbEstado.Location = new System.Drawing.Point(355, 77);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(49, 21);
             this.cbEstado.TabIndex = 4;
+            this.cbEstado.TabStop = false;
+            this.cbEstado.UseWaitCursor = true;
             // 
             // Form1
             // 

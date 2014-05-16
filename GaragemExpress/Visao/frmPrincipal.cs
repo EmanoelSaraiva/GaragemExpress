@@ -39,5 +39,11 @@ namespace GaragemExpress.Visao
         {
             Application.Exit();
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCliente frmC = new frmCliente();
+            frmC.Show();
+        }
     }
 }
